@@ -16,6 +16,7 @@
 #define FileTIMEOUT 1800
 #define TIMEOUT 10
 
+#define MAX_DOWNLINE 50
 
 #define LOLServer "tversion2.lol.qq.com"
 #define DNFServer "tcls.qq.com"

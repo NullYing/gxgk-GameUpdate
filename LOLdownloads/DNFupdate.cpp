@@ -25,11 +25,11 @@ int CGameUpdateDlg::DNFGetPath()
 			SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 			//备用默认地址
 			if (!CheckDNF()){
-				SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 				m_DNFPath = "C:\\Program Files\\腾讯游戏\\地下城与勇士";
+				SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 				if (!CheckDNF()){
-					SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 					m_DNFPath = "C:\\Program Files (x86)\\腾讯游戏\\地下城与勇士";
+					SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 				}
 			}
 			return 1;
@@ -38,11 +38,11 @@ int CGameUpdateDlg::DNFGetPath()
 	RegCloseKey(PathHKEY);
 
 	if (!CheckDNF()){
-		SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 		m_DNFPath = "C:\\Program Files\\腾讯游戏\\地下城与勇士";
+		SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 		if (!CheckDNF()){
-			SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 			m_DNFPath = "C:\\Program Files (x86)\\腾讯游戏\\地下城与勇士";
+			SetDlgItemText(IDC_EDIT_GamePath, m_DNFPath);
 			if (CheckDNF())
 				return 1;
 		}

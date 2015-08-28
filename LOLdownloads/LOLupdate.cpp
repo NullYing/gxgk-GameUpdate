@@ -24,11 +24,11 @@ int CGameUpdateDlg::LOLGetPath()
 			SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 			//备用默认地址
 			if (!CheckLOL()){
-				SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 				m_LOLPath = "C:\\Program Files\\腾讯游戏\\英雄联盟";
+				SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 				if (!CheckLOL()){
-					SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 					m_LOLPath = "C:\\Program Files (x86)\\腾讯游戏\\英雄联盟";
+					SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 				}
 			}
 			return 1;
@@ -37,11 +37,11 @@ int CGameUpdateDlg::LOLGetPath()
 	RegCloseKey(PathHKEY);
 
 	if (!CheckLOL()){
-		SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 		m_LOLPath = "C:\\Program Files\\腾讯游戏\\英雄联盟";
+		SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 		if (!CheckLOL()){
-			SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 			m_LOLPath = "C:\\Program Files (x86)\\腾讯游戏\\英雄联盟";
+			SetDlgItemText(IDC_EDIT_GamePath, m_LOLPath);
 			if (CheckLOL())
 				return 1;
 		}

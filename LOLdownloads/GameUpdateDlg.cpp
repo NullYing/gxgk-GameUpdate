@@ -129,10 +129,14 @@ BOOL CGameUpdateDlg::OnInitDialog()
 	// TODO:  在此添加额外的初始化代码
 	LoadConfig();
 	
-	if (GameChoose==LOL)
+	if (GameChoose == LOL){
 		((CButton *)GetDlgItem(IDC_RADIO_LOL))->SetCheck(TRUE);
-	if (GameChoose==DNF)
+		m_strPath = m_LOLPath;
+	}
+	if (GameChoose == DNF){
 		((CButton *)GetDlgItem(IDC_RADIO_DNF))->SetCheck(TRUE);
+		m_strPath = m_DNFPath;
+	}
 	if (m_strPath.Compare("") == 0){
 		PathGet();
 	}
@@ -283,11 +287,13 @@ void CGameUpdateDlg::UpdateStatus(bool Updating)
 int CGameUpdateDlg::PathGet()
 {
 	if (GameChoose == LOL){
-		LOLGetPath();
+		if (m_LOLPath.Compare("") == 0)
+			LOLGetPath();
 		m_strPath = m_LOLPath;
 	}
 	if (GameChoose == DNF){
-		DNFGetPath();
+		if (m_DNFPath.Compare("") == 0)
+			DNFGetPath();
 		m_strPath = m_DNFPath;
 	}
 	SetDlgItemText(IDC_EDIT_GamePath, m_strPath);
@@ -338,7 +344,7 @@ unsigned WINAPI __stdcall CGameUpdateDlg::GetVersion(void *para)
 		Dlg->GetDlgItem(IDC_STATIC_Status)->SetWindowText("版本信息获取成功！");
 	}
 	else{
-		Dlg->GetDlgItem(IDC_STATIC_Status)->SetWindowText("版本信息获取失败,请检查网络！");
+		Dlg->GetDlgItem(IDC_STATIC_Status)->SetWindowText("版本信息获取失败,请检查游戏地址和网络状态！");
 	}
 	Dlg->GetVerThread = NULL;
 	Dlg->GetDlgItem(IDC_GetVersion)->EnableWindow(TRUE);
@@ -425,6 +431,7 @@ int CGameUpdateDlg::Update()
 void CGameUpdateDlg::OnBnClickedRadioDnf()
 {
 	GameChoose = DNF;
+
 	PathGet();
 	GetVerThread = (HANDLE)_beginthreadex(NULL, 0, GetVersion, this, 0, 0);
 	// TODO:  在此添加控件通知处理程序代码
@@ -434,7 +441,9 @@ void CGameUpdateDlg::OnBnClickedRadioDnf()
 void CGameUpdateDlg::OnBnClickedRadioLol()
 {
 	GameChoose = LOL;
+
 	PathGet();
+
 	GetVerThread = (HANDLE)_beginthreadex(NULL, 0, GetVersion, this, 0, 0);
 	// TODO:  在此添加控件通知处理程序代码
 }

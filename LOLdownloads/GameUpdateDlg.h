@@ -75,7 +75,7 @@ protected:
 	int GetDNFVer();
 	int DNFRomoteVer();
 	int DNFUpdate(char *ErrPackets, char *Server);
-	char DNFVersion[20][MAX_STRING];
+	char DNFVersion[MAX_DOWNLINE][MAX_STRING];
 
 	HANDLE UpdateThread;
 	HANDLE GetVerThread;
@@ -93,7 +93,7 @@ public:
 	char m_SVersion[MAX_STRING];					//外网服务器版本
 	int m_SVersionInt;					
 	char DiskSign[17];
-	char ListUrl[20][MAX_STRING];
+	char ListUrl[MAX_DOWNLINE][MAX_STRING];
 
 	int PCsign(char *DiskSign);
 	afx_msg void OnBnClickedUpdate();

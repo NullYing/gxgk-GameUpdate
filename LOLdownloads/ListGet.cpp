@@ -26,7 +26,7 @@ char LOLsdat[] = {
 
 int CGameUpdateDlg::LOLGetLine(char *buf)
 {
-	char url[20][MAX_STRING];
+	char url[MAX_DOWNLINE][MAX_STRING];
 	char buf2[MAX_BUFFER_SIZE];
 	char *p = buf, *q = buf2, *n;
 	int i, j;
@@ -110,7 +110,7 @@ int CGameUpdateDlg::LOLGetLine(char *buf)
 	return 0;
 }
 int CGameUpdateDlg::DNFGetLine(char *buf){
-	char url[20][MAX_STRING];
+	char url[MAX_DOWNLINE][MAX_STRING];
 	char buf2[MAX_BUFFER_SIZE];
 	
 	char *p = buf, *q = buf2, *m,*n;
