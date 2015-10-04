@@ -124,7 +124,7 @@ int CGameUpdateDlg::PCsign(char *DiskSign) {
 }
 int CGameUpdateDlg::Feedback(int Status)
 {
-	char http[MAX_STRING], url[MAX_STRING];
+	char http[MAX_STRING] = {0}, url[MAX_STRING];
 
 	sprintf(url, UpdataUrl "log.php?Sign=%s&Status=%d", DiskSign, Status);
 	int ret=DownLoadFileToBuffer(http, MAX_STRING, url, NULL, TIMEOUT, NULL, NULL);

@@ -1,0 +1,2 @@
+3.1.6.2=http://down-update.qq.com:80/lol/autopatch/3162/cdc10865de509d003aa5e64f285149be_version.list
+3.1.6.3=http://down-update.qq.com:80/lol/autopatch/3163/486918ea40676d810fb7f721425cf2e3_version.list

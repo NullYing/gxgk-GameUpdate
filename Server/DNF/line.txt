@@ -1,0 +1,10 @@
+13.0.70.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/14bb2869e23ba74c0b3f663913c5069c_version.list
+13.0.72.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/face54894eb1104d4b8c04f307979d9d_version.list
+13.0.88.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/5041d326b677e49e08256e943f8b4146_version.list
+13.0.92.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/2317990b3f9d101dfd86c2aeeee6269d_version.list
+13.0.96.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/7348eda60bc703bca1b8917d39eabb8c_version.list
+13.0.98.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/4333e346948c996c0e253c78e97baace_version.list
+13.0.99.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/edf625fb5b15b002164998baef009430_version.list
+14.0.20.0=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/e8524ad574478ef3ed946c310fdd8abe_version.list
+14.0.20.1=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/0e268f07433e60a359923f559f6792a5_version.list
+14.0.21.1=http://down-update.qq.com/dnf/autopatch/dnf/tendiff/6c5ee2cef00d9d0dea72ad60fb6ff6ec_version.list
