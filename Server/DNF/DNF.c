@@ -101,7 +101,7 @@ int main(int argc, char *argv){
 			else 
 				break;
 			p = m + strlen("_version.list");
-			//printf("%s\n", url[i]);
+			printf("%s\n", url[i]);
 		}
 		else
 			break;
