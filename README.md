@@ -1,5 +1,5 @@
 #gxgk-GameUpdate
-![mahua](http://www.gxgk.cc/image/logo.png)
+![gxgk](http://www.gxgk.cc/image/logo.png)
 ##游戏更新器
 * 仅广科校园网可高速更新
 * 游戏更新神器，通过内网下载游戏更新，速度突破电信带宽限制
