@@ -17,8 +17,7 @@
         3.MFC界面，并不友好
 4.只分析了英雄联盟和地下城与勇士的更新
 ##注意事项
-如果使用该源码，请准守开源协议，并请勿修改原作者名称
-[GPL开源协议](https://github.com/NullYing/GameUpdate/raw/master/LICENSE)
+如果使用该源码，请遵守[GPL开源协议](https://github.com/NullYing/GameUpdate/raw/master/LICENSE)，并请勿修改原作者名称
 ##界面预览
 该源码客户端界面<br />
 ![客户端界面](https://raw.githubusercontent.com/NullYing/gxgk-GameUpdate/master/images/GameUpdate.png)
